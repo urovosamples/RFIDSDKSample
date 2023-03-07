@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RfidDemo</string>
+    <string name="tab_text_1">tag scan</string>
+    <string name="tab_text_2">tag manage</string>
+    <string name="tab_text_3">setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="info_result">result:</string>
+    <string name="txtepc">tag ID:</string>
+    <string name="bankid">Memory:</string>
+    <string name="memptr">address:</string>
+    <string name="memlen">length:</string>
+
+    <string name="readstr">读出数据:</string>
+    <string name="writestr">Data to write:</string>
+    <string name="butnread">read</string>
+    <string name="butnwrite">write</string>
+    <string name="btn_lock">lock</string>
+    <string name="btn_checklock">check lock</string>
+
+    <string name="tvCountOfTags">number of tags</string>
+    <string name="tvTagCount">total</string>
+    <string name="btClear">clear data</string>
+    <string name="ReadTime">time(ms):</string>
+    <string name="tvTagUii">tag</string>
+    <string name="tvTagLen">length</string>
+    <string name="rbInventorySingle">once</string>
+    <string name="rbInventoryLoop">cycle</string>
+    <string name="btInventory">start</string>
+    <string name="btn_stop_Inventory">stop</string>
+    <string name="title_stoping_Inventory">stopping</string>
+    <string name="btStoping">stopping</string>
+    <string name="_6b_tag_activity">6B tag</string>
+    <string name="scan_info">Scan information</string>
+    <string name="carry_tid">read tid</string>
+    <string name="select_tag">select tag:</string>
+    <string name="access_password">access pwd:</string>
+    <string name="read_tags">tags info:</string>
+    <string name="tag_hint">Please enter data</string>
+    <string name="current_power">current power:</string>
+    <string name="enter_power">input power</string>
+    <string name="get_power">get</string>
+    <string name="set_power">set</string>
+    <string name="firmware">firmware:v</string>
+    <string name="set_power_fail">set power fail</string>
+    <string name="set_power_success">set power success</string>
+    <string name="get_power_fail">get power fail</string>
+    <string name="get_power_success">get power success</string>
+    <string name="write_tag_success">write data success</string>
+    <string name="write_tag_fail">write data fail</string>
+    <string name="write_epc_first">Please enter the EPC content to be written first</string>
+    <string name="read_tag_success">read tag success</string>
+    <string name="read_tag_fail">read tag fail</string>
+    <string name="content_not_null">The input cannot be empty</string>
+    <string name="power_value_not_allow">The value of power is not supported</string>
+    <string name="get_deviceID">getID</string>
+    <string name="start_frency">Starting frequency</string>
+    <string name="frency_step">Frequency point interval</string>
+    <string name="frency_number">Number of frequency points</string>
+    <string name="set_frency">Set the band</string>
+    <string name="get_frency">Get the band</string>
+    <string name="mask_area">area</string>
+    <string name="mask_start">Start address</string>
+    <string name="mask_len">length</string>
+    <string name="mask_data">data</string>
+    <string name="set_mask">set mask</string>
+    <string name="clear_mask">clear mask</string>
+    <string name="set_range">set range</string>
+    <string name="get_range">get range</string>
+    <string name="gj_no_support">Firmware is not supported</string>
+    <string name="set_success">Setup successful</string>
+    <string name="set_fail">Setup failed</string>
+    <string name="get_fail">Acquisition failed</string>
+    <string name="write_t_s">\"Write tag successful \"</string>
+    <string name="write_t_f">\"Failed to write label \"</string>
+</resources>

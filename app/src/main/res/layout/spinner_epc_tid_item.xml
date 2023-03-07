@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="epc"
+            android:id="@+id/sp_epc_item"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+              />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tid"
+            android:id="@+id/sp_tid_item"
+            android:layout_gravity="left"
+
+            android:layout_marginBottom="5dp" />
+</LinearLayout>

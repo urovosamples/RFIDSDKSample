@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RfidDemo</string>
+    <string name="tab_text_1">标签扫描</string>
+    <string name="tab_text_2">标签管理</string>
+    <string name="tab_text_3">设置</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="info_result">执行结果:</string>
+    <string name="txtepc">标签ID:</string>
+    <string name="bankid">存储区:</string>
+    <string name="memptr">起始地址:</string>
+    <string name="memlen">数据长度:</string>
+
+    <string name="readstr">读出数据:</string>
+    <string name="writestr">待写数据:</string>
+    <string name="butnread">读数据</string>
+    <string name="butnwrite">写数据</string>
+    <string name="btn_lock">锁定</string>
+    <string name="btn_checklock">检查锁定</string>
+
+    <string name="tvCountOfTags">标签数量</string>
+    <string name="tvTagCount">累计返回标签数量</string>
+    <string name="btClear">清空数据</string>
+    <string name="ReadTime">时间(ms):</string>
+    <string name="tvTagUii">标签</string>
+    <string name="tvTagLen">长度</string>
+    <string name="rbInventorySingle">单次</string>
+    <string name="rbInventoryLoop">循环</string>
+    <string name="btInventory">开始识别</string>
+    <string name="btn_stop_Inventory">停止识别</string>
+    <string name="title_stoping_Inventory">停止中</string>
+    <string name="btStoping">停止中</string>
+    <string name="_6b_tag_activity">6B标签</string>
+    <string name="scan_info">扫描信息</string>
+    <string name="carry_tid">读取tid</string>
+    <string name="select_tag">选择标签:</string>
+    <string name="access_password">访问密码:</string>
+    <string name="read_tags">读取到的标签:</string>
+    <string name="tag_hint">请输入HEX数据</string>
+    <string name="current_power">当前功率:</string>
+    <string name="enter_power">输入功率的值</string>
+    <string name="get_power">获取功率</string>
+    <string name="set_power">设置功率</string>
+    <string name="firmware">固件:v</string>
+    <string name="set_power_fail">设置功率失败</string>
+    <string name="set_power_success">设置功率成功</string>
+    <string name="get_power_fail">获取功率失败</string>
+    <string name="get_power_success">获取功率成功</string>
+    <string name="write_tag_success">写入数据成功</string>
+    <string name="write_tag_fail">写入数据失败</string>
+    <string name="write_epc_first">请先输入要写入的EPC内容</string>
+    <string name="read_tag_success">读取数据成功</string>
+    <string name="read_tag_fail">读取数据失败</string>
+    <string name="content_not_null">输入内容不能为空</string>
+    <string name="power_value_not_allow">功率的值不在支持范围</string>
+    <string name="get_deviceID">获取ID</string>
+    <string name="start_frency">起始频点</string>
+    <string name="frency_step">频点步长</string>
+    <string name="frency_number">频点数</string>
+    <string name="set_frency">设置自定义频段</string>
+    <string name="get_frency">获取自定义频段</string>
+    <string name="mask_area">掩码区域</string>
+    <string name="mask_start">起始地址</string>
+    <string name="mask_len">长度</string>
+    <string name="mask_data">掩码数据</string>
+    <string name="set_mask">设置掩码</string>
+    <string name="clear_mask">清除掩码</string>
+    <string name="set_range">设置range</string>
+    <string name="get_range">获取range</string>
+    <string name="gj_no_support">固件不支持</string>
+    <string name="set_success">设置成功</string>
+    <string name="set_fail">设置失败</string>
+    <string name="get_fail">获取失败</string>
+    <string name="write_t_s">\"写标签成功 \"</string>
+    <string name="write_t_f">\"写标签失败 \"</string>
+</resources>

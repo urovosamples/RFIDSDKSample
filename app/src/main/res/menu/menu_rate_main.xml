@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.urovo.barcodescanner.activity.RateScanActivity">
+
+    <item
+        android:id="@+id/action_6b"
+        android:orderInCategory="100"
+        android:title="@string/_6b_tag_activity"
+        app:showAsAction="never" />
+
+</menu>
