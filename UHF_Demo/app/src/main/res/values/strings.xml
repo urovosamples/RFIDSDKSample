@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UHFDemo</string>
+    <string name="version">Version:</string>
+    <string name="dmin">MinFre:</string>
+    <string name="band">Band:</string>
+    <string name="dmax">MaxFre:</string>
+    <string name="power">Power:</string>
+    <string name="scantime">MaxScanTime:</string>
+    <string name="btstop">Stop</string>
+    <string name="basicparam">Basic Parameter</string>
+    <string name="scanparam">Inventory Parameter</string>
+    <string name="qvalue">Q:</string>
+    <string name="session">Session:</string>
+    <string name="tidptr">WordPtr:</string>
+    <string name="tidlen">Length:</string>
+    <string name="IvtType">Read Mode:</string>
+    <string name="ReadType">Mix-Read Mem:</string>
+    <string name="getstr">Get</string>
+    <string name="setstr">Set</string>
+    <string name="txtepc">EPC:</string>
+    <string name="bankid">Bank:</string>
+    <string name="memptr">Ptr:</string>
+    <string name="memlen">Len:</string>
+    <string name="pwdstr">Access Pwd:</string>
+    <string name="readstr">ReadData:</string>
+    <string name="writestr">WriteData:</string>
+    <string name="butnread">Read</string>
+    <string name="butnwrite">Write</string>
+    <string name="butnwriteepc">WriteEPC</string>
+    <string name="tab_scan">Scan</string>
+    <string name="tab_rw">R/W</string>
+    <string name="tab_param">Param</string>
+    <string name="power_error">Power set failed</string>
+    <string name="frequent_error">Frequency set failed</string>
+    <string name="get_success">Read Success</string>
+    <string name="get_failed">Read Failed</string>
+    <string name="btn_openrf">Open RF</string>
+    <string name="btn_closerf">Close RF</string>
+    <string name="txt_temp">Temperature</string>
+    <string name="txt_returnloss">Return Loss:</string>
+    <string name="txt_read">Read</string>
+    <string name="write_failed">Write Failed</string>
+    <string name="write_success">Write Success</string>
+    <string name="kill_failed">Kill Failed</string>
+    <string name="kill_success">Kill Success</string>
+    <string name="lock_failed">Lock Failed</string>
+    <string name="lock_success">Lock Success</string>
+    <string name="info_result">Result:</string>
+    <string name="btStoping">Stoping</string>
+    <string name="btn_answer">Answer Mode</string>
+    <string name="btn_active">Active Mode</string>
+    <string name="timeInterval">Interval:</string>
+    <string name="wordptr_empty_warning">WordPtr can not be empty!</string>
+    <string name="length_empty_warning">Length can not be empty!</string>
+    <string name="pwd_empty_warning">Password can not be empty!</string>
+    <string name="content_empty_warning">Write data need content not be empty!</string>
+    <string name="length_content_warning">Length and content does not match!</string>
+    <string name="str_lenght_odd_warning">Length of every data can not be odd!</string>
+    <string name="set_success">Set Success</string>
+    <string name="set_failed">Set Failed</string>
+    <string name="openport_failed">Connect Failed(Please ensure that the module is powered on.)</string>
+    <string name="CardNum">Number&#160;&#160;</string>
+    <string name="CardCount">Times&#160;&#160;</string>
+    <string name="CardSpeed">Speed&#160;&#160;</string>
+
+    <string name="tvTagCount">Count</string>
+    <string name="btClear">Clear</string>
+    <string name="ReadTime">Time(sec):</string>
+    <string name="tvTagUii">EPC</string>
+    <string name="tvTagLen">Length</string>
+    <string name="rbInventorySingle">Single</string>
+    <string name="rbInventoryOnce">Once</string>
+    <string name="rbInventoryLoop">Auto</string>
+    <string name="btInventory">Start Inventory</string>
+    <string name="title_stop_Inventory">Stop Inventory</string>
+    <string name="dwelltime">DwellTime:</string>
+    <string name="btImport">Export</string>
+    <string name="tvKillPwd">Kill Pwd：</string>
+    <string name="btKill">Kill</string>
+    <string name="btlock">Lock</string>
+    <string name="tvLockMem">Lock Mem：</string>
+    <string name="tvLockType">Lock Type：</string>
+    <string name="noteStr">Lock or kill password can not be 00000000</string>
+
+    <string-array name="men_select">
+        <item>Reserve</item>
+        <item>EPC</item>
+        <item>TID</item>
+        <item>User</item>
+    </string-array>
+    <string-array name="readmen_select">
+        <item>EPC</item>
+        <item>TID</item>
+        <item>User</item>
+    </string-array>
+    <string-array name="IvtType_select">
+        <item>EPC-Type</item>
+        <item>Mix-Type</item>
+        <item>FastID-Type</item>
+    </string-array>
+    <string-array name="men_s">
+        <item>S0</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+
+    <string-array name="ab_target">
+        <item>A</item>
+        <item>B</item>
+        <item>A/B</item>
+    </string-array>
+
+    <string-array name="men_q">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="men_tid">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+    </string-array>
+
+    <string-array name="arrayLock">
+        <item>Unlock</item>
+        <item>Permanent Unlock</item>
+        <item>Lock</item>
+        <item>Permanent Lock</item>
+
+    </string-array>
+
+    <string-array name="arrayLockMem">
+        <item>Kill password</item>
+        <item>Access password</item>
+        <item>EPC</item>
+        <item>TID</item>
+        <item>USER</item>
+    </string-array>
+
+    <string-array name="en_select">
+        <item>Disable</item>
+        <item>Enable</item>
+    </string-array>
+
+    <string-array name="en_sp_inv_mode">
+        <item>Battery Life</item>
+        <item>Fastest Read</item>
+        <item>Max Range</item>
+        <item>Balanced Performance</item>
+        <item>Custom Mode</item>
+    </string-array>
+
+    <string-array name="city_array">
+        <item>ALB</item>
+        <item>ARG</item>
+        <item>ARM</item>
+        <item>AUT</item>
+        <item>AZE</item>
+        <item>BLR</item>
+        <item>BEL</item>
+        <item>BIH</item>
+        <item>BRA</item>
+        <item>BUL</item>
+        <item>CAN</item>
+        <item>CHI</item>
+        <item>CHN</item>
+        <item>COL</item>
+        <item>CRC</item>
+        <item>CRO</item>
+        <item>CYP</item>
+        <item>CZE</item>
+        <item>DEN</item>
+        <item>DOM</item>
+        <item>EST</item>
+        <item>FIN</item>
+        <item>FRA</item>
+        <item>GER</item>
+        <item>GRE</item>
+        <item>HUN</item>
+        <item>ISL</item>
+        <item>IRI</item>
+        <item>ITA</item>
+        <item>KOR</item>
+        <item>LIE</item>
+        <item>LTU</item>
+        <item>LUX</item>
+        <item>MKD</item>
+        <item>MLT</item>
+        <item>MEX</item>
+        <item>MDA</item>
+        <item>NED</item>
+        <item>NZL</item>
+        <item>NGR</item>
+        <item>NOR</item>
+        <item>CHN</item>
+        <item>PAN</item>
+        <item>PER</item>
+        <item>POL</item>
+        <item>POR</item>
+        <item>ROM</item>
+        <item>RUS</item>
+        <item>KSA</item>
+        <item>USA</item>
+        <item>SVK</item>
+        <item>SLO</item>
+        <item>RSA</item>
+        <item>ESP</item>
+        <item>SWE</item>
+        <item>SUI</item>
+        <item>HKG</item>
+        <item>THA</item>
+        <item>TUN</item>
+        <item>TUR</item>
+        <item>UAE</item>
+        <item>GBR</item>
+        <item>USA</item>
+        <item>URU</item>
+        <item>VEN</item>
+        <item>UKR</item>
+        <item>MAS</item>
+        <item>SIN</item>
+        <item>AUS</item>
+        <item>IND</item>
+        <item>VIE</item>
+        <item>ISR</item>
+        <item>INA</item>
+        <item>JPN</item>
+        <item>PHI</item>
+    </string-array>
+
+    <string-array name="en_select2">
+        <item>Disable</item>
+        <item>Enable</item>
+    </string-array>
+
+    <string-array name="en_tranfer_type">
+        <item>RFID Off-line data</item>
+        <item>Scan Off-line data</item>
+    </string-array>
+
+    <string name="msgImportsuc">Export success</string>
+    <string name="msgImportfailed">Export failed</string>
+    <string name="msgNodata">No data to export</string>
+
+    <string name="StrLED">LED ON</string>
+    <string name="Optsuccess">Operation successed</string>
+    <string name="Optfailed">Operation failed</string>
+    <string name="txt_range_controll">Range Control：</string>
+
+    <string name="strmaskmem">MaskMem:</string>
+    <string name="strmaskaddr">MaskAddr:</string>
+    <string name="strmasklen">MaskLen:</string>
+    <string name="strmaskdata">MaskData:</string>
+    <string name="strmaskadd">Add</string>
+    <string name="strmaskclear">Clear</string>
+
+    <string name="strsuccess">Success!!!</string>
+    <string name="strfailed">Failed!!!</string>
+    <string name="tab_mask">Mask</string>
+
+    <string name="strantchcek">AntennaCheck:</string>
+
+    <string name="strtagoperate">Tag Operation</string>
+    <string name="strreadandwrite">Read/write</string>
+    <string name="strfindtag">Finding</string>
+    <string name="finding">Find</string>
+    <string name="RunTime">Inventory timeout(Sec):</string>
+
+    <string name="strfactory">Factory:</string>
+    <string name="strfilter">Filter</string>
+
+    <string-array name="arrayfactory">
+        <item>KLW</item>
+        <item>YL</item>
+    </string-array>
+
+    <string name="strselecttag">Select tag</string>
+    <string name="strok">OK</string>
+    <string name="strcancle">Cancle</string>
+    <string name="rfid_initialization">RFID initialization ...</string>
+    <string name="rfid_successful_initialization">RFID Successful initialization</string>
+    <string name="rfid_initialization_failure">RFID Initialization failure</string>
+    <string name="press_again_exit_app">Press again to exit the application</string>
+    <string name="app_need_read_all_file">This program requires your consent to allow access to all files!</string>
+    <string name="tip">Tips</string>
+    <string name="please_choice_epc">Please select label EPC first</string>
+    <string name="txofftime">TxoffTime</string>
+
+    <string name="scan_device">scan device</string>
+    <string name="already_bytes">Received byte：</string>
+    <string name="already_pkg">Received package：</string>
+    <string name="connect_scan_nfc">Please post NFC or [Scan Device] click on the list to connect.</string>
+    <string name="blue_device_xx_not_found">Bluetooth device [ %s ] not found</string>
+    <string name="please_open_ble">Please enable Bluetooth first</string>
+    <string name="please_check_whether_the_system_bluetooth_is_turned_on">Please check whether the system Bluetooth is turned on</string>
+
+    <string name="bluetooth_not_connected">Bluetooth not connected</string>
+    <string name="connect">CONNECT</string>
+    <string name="scan">Scan</string>
+    <string name="scanning_too_frequently">scanning too frequently</string>
+
+    <string name="bluetooth_connection_is_abnormal_abnormal_status_code">Bluetooth connection is abnormal, abnormal status code:</string>
+    <string name="bluetooth_connection">Bluetooth connection ...</string>
+    <string name="bluetooth_connected">Bluetooth connected</string>
+    <string name="offline">Device</string>
+    <string name="open_start_success">Open successfully</string>
+    <string name="open_start_fail">Enable failure</string>
+    <string name="start_tranfer">Start</string>
+    <string name="get_res_fail">Failed to get results</string>
+    <string name="get_res_">Get results：</string>
+    <string name="please_input_cmd">Please enter the instructions first</string>
+    <string name="mem_count">Store data</string>
+    <string name="mem_user">Occupy Store</string>
+    <string name="offline_mode">Off-line mode</string>
+    <string name="tranfter_complete_clear">Transfer clear</string>
+    <string name="trans_delay_100">Transfer delay(N*100ms)</string>
+    <string name="power_off_time">Shutdown time(N*10s)</string>
+    <string name="xm_time">Sleep time(N*10s)</string>
+    <string name="beep_volume">Buzzer volume(1-10)</string>
+    <string name="dt50_rfid_53r">Including DT50 series RFID integrated equipment, 53R serial port connection equipment.</string>
+    <string name="serial_device">Integrated device</string>
+    <string name="ble_device">Bluetooth device</string>
+    <string name="sq91_device">Bluetooth device, currently RFG91.</string>
+    <string name="tid">TID:</string>
+    <string name="tid_operation">TID operation</string>
+    <string name="operating_large_tag">Operating large tag</string>
+    <string name="please_read_tid_mixed_first">Please read TID mixed first</string>
+    <string name="fast_inventory">Fast Inventory</string>
+    <string name="strnormal">Answer Mask</string>
+    <string name="strfast">Find Mask</string>
+    <string name="btn_erase">Erase</string>
+    <string name="more_test"> More Settings </string>
+    <string name="fast_inv_str"> Quick inventory </string>
+    <string name="scan_qr_con"> Scan connection </string>
+    <string name="mau_clear_offline_data"> Manually clear offline data </string>
+    <string name="scan_barcode"> Scan barcode </string>
+    <string name="tips_status"> Prompt </string>
+    <string name="confirm"> Confirm </string>
+    <string name="cancel"> Cancel </string>
+    <string name="please_open_ble_and_gps"> Please turn on Bluetooth and GPS positioning switch </string>
+    <string name="please_open_ble_sysy"> Please turn on the Bluetooth switch </string>
+    <string name="please_open_gps_sys"> Please start the system GPS positioning switch </string>
+    <string name="already_all_storage_premission"> Permission to access all files has been obtained </string>
+    <string name="tips"> Tips </string>
+    <string name="need_all_permisssion"> This program requires your consent to allow access to all files! </string>
+    <string name="embank">Region:</string>
+    <string name="isChangeing"> Charging </string>
+    <string name="not_change"> No charge </string>
+    <string name="ischange_status"> Charging status: </string>
+    <string name="factory_reset"> Restore factory Settings </string>
+    <string name="keyboard_imei"> Key event: </string>
+    <string name="baty_value"> Battery level: </string>
+    <string name="rfid_ver_">RFID version: </string>
+    <string name="ble_ver_"> Bluetooth version: </string>
+    <string name="device_ver_">MCU version: </string>
+    <string name="rfid_sn_">RFID SN: </string>
+    <string name="device_sn"> Device SN: </string>
+    <string name="scan_sn_"> Scanner SN: </string>
+    <string name="re_connect_init">Reconnect</string>
+    <string name="change">Charging</string>
+    <string name="change_not">Not charged</string>
+    <string name="battery_level"> Battery power: </string>
+    <string name="battery_ischange"> Charging status: </string>
+    <string name="short_press_inv">Short Press Inv</string>
+    <string name="long_press_inv">Long Press Inv</string>
+    <string name="mode_selection">Mode selection</string>
+    <string name="inv_mode"> Mode: </string>
+    <string name="regional_frequency_band">Region frequency band</string>
+    <string name="inventory_area">Inventory Area</string>
+    <string name="power_setting">Power setting</string>
+    <string name="tips_inv">Continuous Inventory in Progress</string>
+    <string name="tips_inv_timeout">Inventory will auto stop after %s seconds</string>
+</resources>

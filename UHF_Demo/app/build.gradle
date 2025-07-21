@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 34
+ 
+
+    defaultConfig {
+        applicationId "com.uhf.demo"
+        minSdkVersion 26
+        targetSdkVersion 34
+        versionCode 1
+        versionName getVerName("2.5.")
+
+       
+    }
+
+    signingConfigs {
+        sign {
+            storeFile file('E:/keystore/inkey.keystore')
+            storePassword '12345678'
+            keyAlias = 'inkey'
+            keyPassword '12345678'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.sign
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.sign
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    //因为最新版as中禁用了BuildConfig 所以我们需要手动配置一下
+    buildFeatures {
+        buildConfig = true
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def fileName = "UHFDemo_v${defaultConfig.versionName}.apk" 
+            outputFileName = fileName
+        }
+    }
+
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0' // Zxing 库
+    implementation 'com.google.zxing:core:3.3.3' // Zxing 核心库
+    implementation files('libs/jxl.jar')
+    implementation files('libs/platform_sdk_v3.1.221124.jar')
+
+    implementation files('libs/URFIDLibrary-v2.5.0718.aar')
+ 
+
+
+
+
+}
+def getVerName(String ver_name) {
+    return ver_name+new Date().format("yyyyMMddHHmm")
+}

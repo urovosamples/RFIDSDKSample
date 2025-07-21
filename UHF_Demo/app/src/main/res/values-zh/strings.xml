@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UHFDemo</string>
+    <string name="version">版本号:</string>
+    <string name="dmin">最小频点:</string>
+    <string name="band">频段:</string>
+    <string name="dmax">最大频点:</string>
+    <string name="power">功率:</string>
+    <string name="scantime">询查最大时间:</string>
+    <string name="btstop">停止</string>
+    <string name="basicparam">基本参数</string>
+    <string name="scanparam">询查参数</string>
+    <string name="qvalue">Q:</string>
+    <string name="session">Session:</string>
+    <string name="tidptr">地  址:</string>
+    <string name="tidlen">长  度:</string>
+    <string name="IvtType">查询方式:</string>
+    <string name="ReadType">混合查询区域:</string>
+    <string name="getstr">读取</string>
+    <string name="setstr">设置</string>
+    <string name="txtepc">EPC:</string>
+    <string name="bankid">存储区:</string>
+    <string name="memptr">地     址:</string>
+    <string name="memlen">长     度:</string>
+    <string name="pwdstr">访问密码:</string>
+    <string name="readstr">读出数据:</string>
+    <string name="writestr">待写数据:</string>
+    <string name="butnread">读</string>
+    <string name="butnwrite">写</string>
+    <string name="butnwriteepc">写EPC号</string>
+    <string name="tab_scan">扫描</string>
+    <string name="tab_rw">读写</string>
+    <string name="tab_param">参数</string>
+    <string name="power_error">功率设置失败</string>
+    <string name="frequent_error">频点设置失败</string>
+    <string name="set_success">设置成功</string>
+    <string name="set_failed">设置失败</string>
+    <string name="openport_failed">串口连接失败（请确保模块已开机）</string>
+    <string name="get_success">读取成功</string>
+    <string name="get_failed">读取失败</string>
+    <string name="write_failed">写数据失败</string>
+    <string name="write_success">写数据成功</string>
+    <string name="info_result">执行结果:</string>
+    <string name="btn_openrf">强打</string>
+    <string name="btn_closerf">关闭</string>
+    <string name="txt_temp">温度:</string>
+    <string name="txt_returnloss">回损:</string>
+    <string name="txt_read">测量</string>
+    <string name="btStoping">停止中</string>
+    <string name="btn_answer">应答模式</string>
+    <string name="btn_active">实时模式</string>
+    <string name="timeInterval">间隔时间:</string>
+    <string name="dwelltime">驻留时间:</string>
+    <string name="wordptr_empty_warning">WordPtr 不能为空!</string>
+    <string name="length_empty_warning">Length 不能为空!</string>
+    <string name="pwd_empty_warning">Password 不能为空!</string>
+    <string name="content_empty_warning">写数据需要内容不空!</string>
+    <string name="length_content_warning">长度和内容不匹配!</string>
+    <string name="str_lenght_odd_warning">每个数据的长度不能是奇数!</string>
+    <string-array name="men_select">
+        <item>Reserve</item>
+        <item>EPC</item>
+        <item>TID</item>
+        <item>USER</item>
+    </string-array>
+    <string-array name="readmen_select">
+        <item>EPC</item>
+        <item>TID</item>
+        <item>USER</item>
+    </string-array>
+    <string-array name="IvtType_select">
+        <item>EPC查询</item>
+        <item>混合查询</item>
+        <item>FastID</item>
+    </string-array>
+    <string-array name="men_s">
+        <item>S0</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+    <string-array name="men_q">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="men_tid">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+    </string-array>
+
+
+    <string-array name="Power_select">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+    </string-array>
+
+    <string name="CardNum">张数&#160;&#160;</string>
+    <string name="CardCount">次数&#160;&#160;</string>
+    <string name="CardSpeed">速度&#160;&#160;</string>
+    <string name="tvTagCount">数量</string>
+    <string name="btClear">清空数据</string>
+    <string name="ReadTime">时间(秒):</string>
+    <string name="tvTagUii">标签</string>
+    <string name="tvTagLen">长度</string>
+    <string name="rbInventorySingle">单个</string>
+    <string name="rbInventoryOnce">单次</string>
+    <string name="rbInventoryLoop">循环</string>
+    <string name="btInventory">开始盘点</string>
+    <string name="title_stop_Inventory">停止盘点</string>
+    <string name="btImport">导出</string>
+    <string name="RunTime">盘点超时(秒):</string>
+
+    <string name="tvKillPwd">销毁密码：</string>
+    <string name="btKill">销毁</string>
+    <string name="btlock">锁定</string>
+    <string name="tvLockMem">锁定区域：</string>
+    <string name="tvLockType">锁定方式：</string>
+    <string-array name="arrayLock">
+        <item>解锁</item>
+        <item>永久解锁</item>
+        <item>锁定</item>
+        <item>永久锁定</item>
+    </string-array>
+
+    <string name="kill_failed">销毁失败</string>
+    <string name="kill_success">销毁成功</string>
+    <string name="lock_failed">锁定失败</string>
+    <string name="lock_success">锁定成功</string>
+    <string name="noteStr">注：锁定或杀死标签密码不能为8个0</string>
+
+    <string-array name="en_select">
+        <item>禁止</item>
+        <item>启用</item>
+    </string-array>
+
+    <string-array name="en_select2">
+        <item>关闭</item>
+        <item>开启</item>
+    </string-array>
+
+    <string-array name="en_tranfer_type">
+        <item>RFID离线数据</item>
+        <item>Scan离线数据</item>
+    </string-array>
+
+    <string-array name="en_sp_inv_mode">
+        <item>续航模式</item>
+        <item>快速读取模式</item>
+        <item>远距模式</item>
+        <item>均衡模式</item>
+        <item>自定义模式</item>
+    </string-array>
+
+
+    <string name="msgImportsuc">导出成功</string>
+    <string name="msgImportfailed">导出失败</string>
+    <string name="msgNodata">无导出数据</string>
+    <string name="StrLED">亮灯</string>
+    <string name="Optsuccess">操作成功</string>
+    <string name="Optfailed">操作失败</string>
+    <string name="txt_range_controll">范围控制:</string>
+
+    <string name="strmaskmem">掩码区域:</string>
+    <string name="strmaskaddr">起始地址:</string>
+    <string name="strmasklen">掩码长度:</string>
+    <string name="strmaskdata">掩码数据:</string>
+    <string name="strmaskadd">添加</string>
+    <string name="strmaskclear">清空</string>
+
+    <string name="strsuccess">成功!!!</string>
+    <string name="strfailed">失败!!!</string>
+    <string name="tab_mask">掩码</string>
+    <string name="strantchcek">天线检测:</string>
+
+    <string name="strtagoperate">标签操作</string>
+    <string name="strreadandwrite">读写操作</string>
+    <string name="strfindtag">标签查找</string>
+    <string name="finding">查找</string>
+
+    <string name="strfactory">标签厂家:</string>
+    <string name="strfilter">筛选标签</string>
+
+    <string-array name="arrayfactory">
+        <item>凯路威</item>
+        <item>宜链</item>
+    </string-array>
+
+    <string name="strselecttag">选择标签</string>
+    <string name="strok">确定</string>
+    <string name="strcancle">取消</string>
+    <string name="rfid_initialization">RFID 初始化中 ...</string>
+    <string name="rfid_successful_initialization">RFID 初始化成功</string>
+    <string name="rfid_initialization_failure">RFID 初始化失败</string>
+    <string name="press_again_exit_app">再按一次退出应用</string>
+    <string name="app_need_read_all_file">本程序需要您同意允许访问所有文件权限！</string>
+    <string name="tip">提示</string>
+    <string name="please_choice_epc">请先选中标签EPC</string>
+    <string name="txofftime">TxoffTime</string>
+
+    <string name="scan_device">扫描设备</string>
+    <string name="already_bytes">已接收字节：</string>
+    <string name="already_pkg">已接包：</string>
+    <string name="connect_scan_nfc">请贴NFC或[扫描设备】点击列表连接</string>
+    <string name="blue_device_xx_not_found">蓝牙设备 [ %s ] 未找到</string>
+    <string name="please_open_ble">请先开启蓝牙</string>
+    <string name="please_check_whether_the_system_bluetooth_is_turned_on">请检查系统蓝牙是否开启</string>
+
+    <string name="bluetooth_not_connected">蓝牙未连接</string>
+    <string name="connect">连接</string>
+    <string name="scan">扫描</string>
+    <string name="scanning_too_frequently">扫描过于频繁</string>
+
+
+    <string name="bluetooth_connection_is_abnormal_abnormal_status_code">蓝牙连接异常，异常状态码:</string>
+    <string name="bluetooth_connection">蓝牙连接中... </string>
+    <string name="bluetooth_connected">蓝牙已连接</string>
+
+    <string name="offline">设备</string>
+    <string name="open_start_success">开启成功</string>
+    <string name="open_start_fail">开启失败</string>
+    <string name="start_tranfer">开始传输</string>
+
+    <string name="get_res_fail">获取结果失败</string>
+    <string name="get_res_">获取结果：</string>
+    <string name="please_input_cmd">请先输入指令</string>
+    <string name="mem_count">存储数据</string>
+    <string name="mem_user">占用存储</string>
+    <string name="offline_mode">离线模式</string>
+    <string name="tranfter_complete_clear">传输完清除</string>
+    <string name="trans_delay_100">传输延时(N*100ms)</string>
+    <string name="power_off_time">关机时间(N*10s)</string>
+    <string name="xm_time">休眠时间(N*10s)</string>
+    <string name="beep_volume">蜂鸣器音量(1-10)</string>
+    <string name="dt50_rfid_53r">包括DT50系列RFID一体设备、53R串口连接设备.</string>
+    <string name="serial_device">一体设备</string>
+    <string name="ble_device">蓝牙设备</string>
+    <string name="sq91_device">蓝牙设备，目前为 RFG91.</string>
+    <string name="tid">TID:</string>
+    <string name="tid_operation">通过TID操作</string>
+    <string name="operating_large_tag">操作大内存标签</string>
+    <string name="please_read_tid_mixed_first">请先混合查询TID数据</string>
+    <string name="strnormal">普通模式掩码</string>
+    <string name="strfast">快速查找掩码</string>
+
+    <string name="fast_inventory">快速盘点</string>
+    <string name="btn_erase">擦除</string>
+
+    <string name="more_test">更多设置</string>
+    <string name="fast_inv_str">快速盘点</string>
+    <string name="scan_qr_con">扫码连接</string>
+    <string name="mau_clear_offline_data">手动清除离线数据</string>
+    <string name="scan_barcode">扫条码</string>
+    <string name="tips_status">提示</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="please_open_ble_and_gps">请先开启系统蓝牙和GPS定位开关</string>
+    <string name="please_open_ble_sysy">请先开启系统蓝牙开关</string>
+    <string name="please_open_gps_sys">请先开启系统GPS定位开关</string>
+    <string name="already_all_storage_premission">已获得访问所有文件权限</string>
+    <string name="tips">提示</string>
+    <string name="need_all_permisssion">本程序需要您同意允许访问所有文件权限！</string>
+    <string name="embank">区域:</string>
+    <string name="isChangeing">正在充电</string>
+    <string name="not_change">未充电</string>
+    <string name="ischange_status">充电状态：</string>
+    <string name="factory_reset">恢复出厂设置</string>
+    <string name="keyboard_imei">按键事件：</string>
+    <string name="baty_value">电池电量：</string>
+    <string name="rfid_ver_">RFID版本号：</string>
+    <string name="ble_ver_">蓝牙版本号：</string>
+    <string name="device_ver_">MCU版本号：</string>
+    <string name="rfid_sn_">RFID SN：</string>
+    <string name="device_sn">设备SN：</string>
+    <string name="scan_sn_">扫描头SN：</string>
+    <string name="re_connect_init">重新连接</string>
+    <string name="change">充电</string>
+    <string name="change_not">未充电</string>
+    <string name="battery_level">电池电量：</string>
+    <string name="battery_ischange">充电状态：</string>
+    <string name="short_press_inv">点按盘点</string>
+    <string name="long_press_inv">长按盘点</string>
+    <string name="mode_selection">模式选择</string>
+    <string name="inv_mode"> 模式: </string>
+    <string name="regional_frequency_band">频段设置</string>
+    <string name="inventory_area">盘点区域</string>
+    <string name="power_setting">功率设置</string>
+    <string name="tips_inv">正在进行持续盘点</string>
+    <string name="tips_inv_timeout">盘点%s秒钟后自动停止</string>
+</resources>

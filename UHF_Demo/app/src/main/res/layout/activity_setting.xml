@@ -1,0 +1,667 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+   
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+           <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/info_result" />
+
+                <TextView
+                    android:id="@+id/param_result"
+                    android:layout_weight="2"
+                    android:layout_width="0dip"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#cc0000"
+                    android:gravity="center"
+                    android:layout_height="@dimen/rm_6c_et_height"/>
+        </LinearLayout>
+
+
+    <ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="vertical" >
+		<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+          
+		 
+        
+         <TextView
+             android:layout_width="fill_parent"
+            android:background="@color/grayslate"
+            android:text="@string/regional_frequency_band"
+            android:gravity="center"
+             android:textSize="15dp"
+             android:textStyle="bold"
+             android:layout_height="30dp"/>
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:gravity="right"
+               android:layout_gravity="center"
+               android:layout_weight="1"
+               android:text="@string/band" />
+
+            <Spinner
+                android:id="@+id/band_spinner"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/rm_6c_et_height"
+                android:layout_weight="2"
+                android:gravity="left"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:gravity="right"
+               android:layout_weight="1"
+               android:text="@string/dmin" />
+
+            <Spinner
+                android:id="@+id/min_spinner"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/rm_6c_et_height"
+                android:layout_weight="2"
+                android:gravity="left"  />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:gravity="right"
+               android:layout_weight="1"
+               android:text="@string/dmax" />
+
+            <Spinner
+                android:id="@+id/max_spinner"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/rm_6c_et_height"
+                android:layout_weight="2"
+                android:gravity="left"  />
+        </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/pro_read"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/color_button_selector"
+                android:textColor="@color/white"
+                android:text="@string/getstr" />
+
+            <Button
+                android:id="@+id/pro_setting"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/color_button_selector"
+                android:textColor="@color/white"
+                android:text="@string/setstr" />
+        </LinearLayout>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/grayslate"
+                android:text="@string/power_setting"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:text="@string/power" />
+
+                <Spinner
+                    android:id="@+id/power_spinner"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/rm_6c_et_height"
+                    android:layout_weight="2"
+                    android:gravity="left"  />
+
+                <Button
+                    android:id="@+id/bt_GetPower"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_button_selector"
+                    android:textColor="@color/white"
+                    android:text="@string/getstr" />
+                <Button
+                    android:id="@+id/bt_SetPower"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_button_selector"
+                    android:textColor="@color/white"
+                    android:text="@string/setstr" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"/>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/grayslate"
+                android:text="@string/inventory_area"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:text="@string/embank"/>
+                <Spinner
+                    android:id="@+id/spinner_inventory_mode"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:entries="@array/spinner_inventory_mode"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:text="@string/tidptr" />
+
+                <Spinner
+                    android:id="@+id/tidptr_spinner"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/rm_6c_et_height"
+                    android:layout_weight="2"
+                    android:gravity="left"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:text="@string/tidlen" />
+
+                <Spinner
+                    android:id="@+id/tidlen_spinner"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/rm_6c_et_height"
+                    android:layout_weight="2"
+                    android:gravity="left"  />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/area_read"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_button_selector"
+                    android:textColor="@color/white"
+                    android:text="@string/getstr" />
+
+                <Button
+                    android:id="@+id/area_setting"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_button_selector"
+                    android:textColor="@color/white"
+                    android:text="@string/setstr" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:text="@string/RunTime" />
+
+                <EditText
+                    android:id="@+id/tv_runtime"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/rm_6c_et_height"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:gravity="left"  />
+                <Button
+                    android:id="@+id/btn_timeout"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_button_selector"
+                    android:textColor="@color/white"
+                    android:text="@string/setstr" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/grayslate"
+                android:text="@string/mode_selection"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"/>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_weight="0.6"
+                    android:text="@string/inv_mode" />
+
+                <Spinner
+                    android:id="@+id/inventory_mode_spinner"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/rm_6c_et_height"
+                    android:layout_weight="2.4"
+                    android:gravity="left"  />
+
+                <Button
+                    android:id="@+id/bt_get_energy_mode"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_button_selector"
+                    android:textColor="@color/white"
+                    android:text="@string/getstr" />
+                <Button
+                    android:id="@+id/bt_set_energy_mode"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_button_selector"
+                    android:textColor="@color/white"
+                    android:text="@string/setstr" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_inventory_parameters"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <TextView
+            android:layout_width="fill_parent"
+            android:background="@color/grayslate"
+            android:text="@string/scanparam"
+            android:gravity="center"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:layout_height="25dp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"/>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:text="Target" />
+
+                <Spinner
+                    android:id="@+id/ab_spinner"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/rm_6c_et_height"
+                    android:layout_weight="2"
+                    android:gravity="left"  />
+
+                <Button
+                    android:id="@+id/bt_GetAB"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_button_selector"
+                    android:textColor="@color/white"
+                    android:text="@string/getstr" />
+                <Button
+                    android:id="@+id/bt_SetAB"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_button_selector"
+                    android:textColor="@color/white"
+                    android:text="@string/setstr" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:gravity="right"
+               android:layout_weight="1"
+               android:text="@string/qvalue" />
+
+            <Spinner
+                android:id="@+id/qvalue_spinner"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/rm_6c_et_height"
+                android:layout_weight="2"
+                android:gravity="left"  />
+
+
+            <Button
+                android:id="@+id/bt_GetQV"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/color_button_selector"
+                android:textColor="@color/white"
+                android:text="@string/getstr" />
+            <Button
+                android:id="@+id/bt_SetQV"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/color_button_selector"
+                android:textColor="@color/white"
+                android:text="@string/setstr" />
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:gravity="right"
+               android:layout_weight="1"
+               android:text="@string/session" />
+
+            <Spinner
+                android:id="@+id/session_spinner"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/rm_6c_et_height"
+                android:layout_weight="2"
+                android:gravity="left"  />
+            <Button
+                android:id="@+id/bt_GetSS"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/color_button_selector"
+                android:textColor="@color/white"
+                android:text="@string/getstr" />
+            <Button
+                android:id="@+id/bt_SetSS"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/color_button_selector"
+                android:textColor="@color/white"
+                android:text="@string/setstr" />
+        </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"/>
+                <LinearLayout
+                    android:id="@+id/line_profile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:text="Profile" />
+
+                    <Spinner
+                        android:id="@+id/prof_spinner"
+                        android:layout_width="0dip"
+                        android:layout_height="@dimen/rm_6c_et_height"
+                        android:layout_weight="2"
+                        android:gravity="left"  />
+                    <Button
+                        android:id="@+id/bt_GetProfile"
+                        android:layout_width="0dip"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/color_button_selector"
+                        android:textColor="@color/white"
+                        android:text="@string/getstr" />
+                    <Button
+                        android:id="@+id/bt_SetProfile"
+                        android:layout_width="0dip"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/color_button_selector"
+                        android:textColor="@color/white"
+                        android:text="@string/setstr" />
+                </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"/>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/line_range"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:text="@string/txt_range_controll" />
+
+                <Spinner
+                    android:id="@+id/range_spinner"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/rm_6c_et_height"
+                    android:layout_weight="2"
+                    android:gravity="left"  />
+
+                <Button
+                    android:id="@+id/bt_GetRange"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_button_selector"
+                    android:textColor="@color/white"
+                    android:text="@string/getstr" />
+                <Button
+                    android:id="@+id/bt_SetDelay"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_button_selector"
+                    android:textColor="@color/white"
+                    android:text="@string/setstr" />
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+
+
+
+   </LinearLayout>
+</ScrollView>
+    
+    
+
+</LinearLayout>

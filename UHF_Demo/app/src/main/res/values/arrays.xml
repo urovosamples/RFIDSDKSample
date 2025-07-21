@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_mask_area">
+        <item>EPC</item>
+        <item>TID</item>
+        <item>USER</item>
+    </string-array>
+    <string-array name="spinner_inventory_mode">
+        <item>EPC</item>
+        <item>EPC+TID</item>
+        <item>EPC+USER</item>
+        <item>EPC+RESERVED</item>
+        <item>FastTID</item>
+        <item>EPC+EPC</item>
+    </string-array>
+    <array name="bank">
+        <item>密码区</item>
+        <item>EPC</item>
+        <item>TID</item>
+        <item>USER</item>
+    </array>
+
+
+    <string-array name="spinner_etsi3_royal">
+        <item>865.7</item>
+        <item>866.3</item>
+        <item>866.9</item>
+        <item>867.5</item>
+    </string-array>
+    <string-array name="spinner_ukraine">
+        <item>868.0</item>
+        <item>868.1</item>
+        <item>868.2</item>
+        <item>868.3</item>
+        <item>868.4</item>
+        <item>868.5</item>
+        <item>868.6</item>
+    </string-array>
+    <string-array name="spinner_cn_royal">
+        <item>840.125</item>
+        <item>840.375</item>
+        <item>840.625</item>
+        <item>840.875</item>
+        <item>841.125</item>
+        <item>841.375</item>
+        <item>841.625</item>
+        <item>841.875</item>
+        <item>842.125</item>
+        <item>842.375</item>
+        <item>842.625</item>
+        <item>842.875</item>
+        <item>843.125</item>
+        <item>843.375</item>
+        <item>843.625</item>
+        <item>843.875</item>
+        <item>844.125</item>
+        <item>844.375</item>
+        <item>844.625</item>
+        <item>844.875</item>
+    </string-array>
+</resources>

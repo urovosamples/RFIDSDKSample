@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:descendantFocusability="blocksDescendants"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<RadioGroup
+			android:id="@+id/RgInventory"
+			android:layout_width="0dp"
+			android:layout_weight="3"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginLeft="10dp"
+			android:padding="5dp" >
+
+			<RadioButton
+				android:id="@+id/RbInventorySingle"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/rbInventorySingle"
+				android:textColor="@drawable/check_text_color2"
+				android:textSize="15sp"
+				android:layout_width="0dp" />
+			<RadioButton
+				android:id="@+id/RbInventoryLoop"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:checked="true"
+				android:text="@string/rbInventoryLoop"
+				android:textColor="@drawable/check_text_color2"
+				android:layout_width="0dp"
+				android:textSize="15sp" />
+
+
+		</RadioGroup>
+
+		<TextView
+			android:id="@+id/tv_fm"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:padding="5dp"
+			android:layout_height="match_parent"
+			android:gravity="center"/>
+
+	</LinearLayout>
+
+
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/gray1" />
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:gravity="center_vertical" >
+
+
+
+
+		<LinearLayout
+			android:id="@+id/llContinuous"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:paddingBottom="5dp"
+			android:paddingTop="5dp" >
+
+
+
+
+			<Button
+				android:id="@+id/BtInventory"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:layout_weight="3"
+				android:textAllCaps="false"
+				android:background="@drawable/color_button_selector"
+				android:text="@string/btInventory"
+				android:textColor="@color/white" />
+
+			<Button
+				android:id="@+id/BtImport"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAllCaps="false"
+				android:background="@drawable/color_button_selector"
+				android:textColor="@color/white"
+				android:text="@string/btImport" />
+
+
+
+
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			  >
+
+
+
+
+			<TextView
+				android:id="@+id/tv_tips"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:textAllCaps="false"
+				android:text=""
+				android:textColor="@color/grayslate" />
+
+
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp" >
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/CardNum"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/tv_count"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="0"
+			android:textSize="15sp"
+			android:textStyle="bold" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/CardCount"
+			android:textSize="14sp" />
+		<TextView
+			android:id="@+id/tv_alltag"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="0"
+			android:textSize="15sp"
+			android:textStyle="bold" />
+
+		<Button
+			android:id="@+id/BtClear"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/btClear"
+			android:textColor="@color/white"
+			android:background="@drawable/color_button_selector"
+			android:layout_marginRight="5dp" />
+
+	</LinearLayout>
+
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp" >
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/ReadTime"
+			android:textSize="12sp" />
+		<TextView
+			android:id="@+id/tv_times"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="00:00:00"
+			android:textColor="@color/red1"
+			android:textSize="12sp"
+			android:textStyle="bold" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="@string/CardSpeed"
+			android:textSize="12sp" />
+		<TextView
+			android:id="@+id/tv_tagspeed"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:text="0"
+			android:layout_weight="1"
+			android:textColor="@color/red1"
+			android:textSize="12sp"
+			android:textStyle="bold" />
+
+	</LinearLayout>
+
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="5dp"
+		android:background="@color/gray1" />
+
+
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:background="@color/white"
+		android:paddingBottom="5dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="5dp" >
+
+		<TextView
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/tvTagUii"
+			android:textSize="15sp" />
+
+		<TextView
+            android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="4"
+			android:text=""
+			android:textColor="@color/red1"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+
+		<TextView
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/tvTagLen"
+			android:visibility="gone" />
+
+		<TextView
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/tvTagCount"
+			android:textSize="15sp" />
+
+		<TextView
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="RSSI"
+			android:textSize="15sp"/>
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/gray1" />
+
+	<ListView
+		android:id="@+id/LvTags"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+
+</LinearLayout>

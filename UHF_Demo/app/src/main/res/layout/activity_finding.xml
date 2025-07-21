@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+         >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/txtepc" />
+
+        <TextView
+            android:id="@+id/epc_id"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:text="" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true">
+    <Button
+        android:id="@+id/btfind"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/color_button_selector"
+        android:text="@string/finding"
+        android:textColor="@color/white"
+         />
+    </LinearLayout>
+    <com.rfid.demo.utils.CircleProgress
+        android:id="@+id/circle_progress"
+        android:layout_width="260dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        app:antiAlias="true"
+        app:arcWidth="15dp"
+        app:bgArcColor="@android:color/darker_gray"
+        app:bgArcWidth="2dp"
+        app:dottedLineWidth="12dp"
+        app:foreEndColor="#F4F200"
+        app:foreStartColor="#FE6615"
+        app:hintSize="15dp"
+        app:maxValue="100"
+        app:startAngle="135"
+        app:sweepAngle="270"
+        app:textOffsetPercentInRadius="0.5"
+        app:unit=""
+        app:unitColor="@android:color/darker_gray"
+        app:unitSize="15dp"
+        app:value="0"
+        app:valueColor="#FFCC1E"
+        app:valueSize="80dp"
+        />
+
+
+</RelativeLayout>

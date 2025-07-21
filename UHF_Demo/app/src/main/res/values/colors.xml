@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#008C8C</color>
+
+    <color name="transparent_background_tab">#00ffffff</color>
+    <color name="white_title_status">#00FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray1">#dbdbdb</color>
+    <color name="red">#FF0000</color>
+    <color name="red1">#db2627</color>
+    <color name="blue1">#2095ac</color>
+    <color name="grayslate">#708090</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#008577</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorWarn">#B22222</color>
+
+    <color name="colorRfid">#A9F8F0</color>
+    <color name="colorScan">#F6BCBC</color>
+</resources>
